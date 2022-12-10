@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+
+:root{
+    --dark-color: #093436;
+    --primary-color: #fecd5f;
+    --secondary-color: #ef2950;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.heading{
+    /* text-align: center; */
+    font-family: 'Klee One', cursive;
+    color: var(--dark-color);
+    font-size: 40px;
+}
+
+main{
+    background-color: var(--dark-color);
+    height: 90vh;
+    padding: 5% 0px 0px 0px;
+}
+
+.score-board{
+    border: 3px ridge #fff;
+    max-width: 260px;
+    margin:  auto;
+    color: #e19fff;
+    font-size: 2.1em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.badge{
+    background-color: var(--secondary-color);
+    font-family: 'Nerko One', cursive;
+    font-size: 0.8em;
+    font-weight: 200;
+    padding: 2px 8px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#user{
+    left: -30px;
+    top: 23px;
+}
+
+#computer{
+    right: -30px;
+    top: 23px;
+}
+
+.result{
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+.result > p{
+    font-weight: bolder;
+    font-family: 'Klee One', cursive;
+    color: var(--primary-color);
+    
+    text-align: center;
+}
+
+.choices{
+    display: flex;
+    /* border: 1px solid yellow; */
+    width: 50%;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+.choices img{
+    width: 120px;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: all 0.2s ease;
+}
+
+.choices img:active{
+    background-color: var(--secondary-color);
+}
+    
+.message{
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    color: var(--primary-color);
+}
+
+.green-glow{
+    background-color: 3px solid green;
+}
+
+.red-glow{
+    background-color: 3px solid red;
+}
+
+    /* Design phones [Extra small devices] */
+    @media only screen and (max-width: 750px) {
+        .heading{
+             text-align: center; 
+             font-family: 'Klee One', cursive; 
+            color: var(--dark-color);
+            font-size: 30px;
+        }
+
+        .result > p{
+            font-size: 30px;
+        }
+
+        .choices{
+            min-width: 290px;
+            justify-content: space-around;
+        }
+
+        .choices img{
+            width: 80px;
+
+        }
+    } 
+
+
